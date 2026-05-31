@@ -1,8 +1,8 @@
-package pages;
+package pages.abstracts;
 
 import org.openqa.selenium.WebDriver;
 
-public class HomePage extends CommonPage {
+public abstract class HomePage extends CommonPage {
 
     public HomePage(WebDriver driver) {
         super(driver);

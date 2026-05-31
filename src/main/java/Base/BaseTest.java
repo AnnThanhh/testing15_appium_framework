@@ -1,7 +1,6 @@
 package Base;
 
 import Report.ExtentReportManager;
-import drivers.ChromeDriverManager;
 import drivers.DriverFactory;
 import drivers.DriverManager;
 import org.apache.logging.log4j.LogManager;

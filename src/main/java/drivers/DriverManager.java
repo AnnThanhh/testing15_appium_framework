@@ -1,13 +1,14 @@
 package drivers;
 
+import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.WebDriver;
 
 public abstract class DriverManager {
-    protected WebDriver driver;
+    protected AppiumDriver driver;
 
-    public abstract void createWebDriver();
+    public abstract void createDriver();
 
-    public WebDriver getDriver(){
+    public AppiumDriver getDriver(){
         return this.driver;
     }
 }
