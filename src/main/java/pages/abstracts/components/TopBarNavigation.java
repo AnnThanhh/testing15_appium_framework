@@ -10,7 +10,7 @@ public abstract class TopBarNavigation extends BasePage {
         super(driver);
     }
 
-    public abstract void navigateToRegisterPage();
+    public abstract void clickMenuButton();
 
     public abstract void navigateToLoginPage();
 }
