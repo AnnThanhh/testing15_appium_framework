@@ -1,0 +1,57 @@
+[2026-05-10 17:09:25] [INFO ] Register01_Verify_Valid_Register - Starting before suit - initialize extent report
+[2026-05-10 17:09:25] [INFO ] TestListener - onStart
+[2026-05-10 17:09:25] [INFO ] Register01_Verify_Valid_Register - Starting before class - initialize webdriver
+[2026-05-10 17:09:26] [INFO ] Register01_Verify_Valid_Register - Starting before method - create test in extent reporttest_valid_register
+[2026-05-10 17:09:26] [INFO ] TestListener - onTestStart
+[2026-05-10 17:09:26] [INFO ] Register01_Verify_Valid_Register - bước 1: mở trình duyệt và truy cập và trang Demo1
+[2026-05-10 17:09:29] [INFO ] Register01_Verify_Valid_Register - bước 2: click vào link 'Đăng Ký' trên thanh điều hướng
+[2026-05-10 17:09:29] [INFO ] TopBarNavigation - Clicking on element with locator: By.linkText: Đăng Ký and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] TopBarNavigation - Waiting for element clickable with locator: By.linkText: Đăng Ký and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] Register01_Verify_Valid_Register - bước 3: nhập thông tin hợp vào form đăng ký
+[2026-05-10 17:09:29] [INFO ] Register01_Verify_Valid_Register - bước 4: nhập thông tin hợp vào ô tài khoản
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Inputting text: '34d41abb-d18e-4c63-96ea-2a99da33f854' into element with locator: By.id: taiKhoan and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Waiting for element visible with locator: By.id: taiKhoan and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] Register01_Verify_Valid_Register - bước 5: nhập thông tin hợp vào ô mật khẩu
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Inputting text: '123456' into element with locator: By.id: matKhau and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Waiting for element visible with locator: By.id: matKhau and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] Register01_Verify_Valid_Register - bước 6: nhập thông tin hợp vào ô nhập lại mật khẩu
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Inputting text: '123456' into element with locator: By.id: confirmPassWord and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Waiting for element visible with locator: By.id: confirmPassWord and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] Register01_Verify_Valid_Register - bước 7: nhập thông tin hợp vào ô nhập lại họ tên
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Inputting text: 'John Johnson' into element with locator: By.id: hoTen and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Waiting for element visible with locator: By.id: hoTen and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] Register01_Verify_Valid_Register - bước 8: nhập thông tin hợp vào ô nhập lại email
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Inputting text: '34d41abb-d18e-4c63-96ea-2a99da33f854@example.com' into element with locator: By.id: email and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Waiting for element visible with locator: By.id: email and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] Register01_Verify_Valid_Register - bước 9: click vào button 'Đăng Ký'
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Clicking on element with locator: By.className: MuiButton-label and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] RegisterPage - Waiting for element clickable with locator: By.className: MuiButton-label and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] Register01_Verify_Valid_Register - bước 10: kiểm tra message 'Đăng Ký thành công' hiển thị
+[2026-05-10 17:09:29] [INFO ] CommonDialog - Getting text from element with locator: By.id: swal2-title and timeout: 10 seconds
+[2026-05-10 17:09:29] [INFO ] CommonDialog - Waiting for element visible with locator: By.id: swal2-title and timeout: 10 seconds
+[2026-05-10 17:09:30] [INFO ] Register01_Verify_Valid_Register - bước 11: click vào button 'Đóng' trên message dialog
+[2026-05-10 17:09:30] [INFO ] CommonDialog - Clicking on element with locator: By.xpath: //button[text()='Đóng'] and timeout: 10 seconds
+[2026-05-10 17:09:30] [INFO ] CommonDialog - Waiting for element clickable with locator: By.xpath: //button[text()='Đóng'] and timeout: 10 seconds
+[2026-05-10 17:09:30] [INFO ] Register01_Verify_Valid_Register - bước 12: click vào link 'Đăng Nhập' trên thanh điều hướng
+[2026-05-10 17:09:30] [INFO ] TopBarNavigation - Clicking on element with locator: By.linkText: Đăng Nhập and timeout: 10 seconds
+[2026-05-10 17:09:30] [INFO ] TopBarNavigation - Waiting for element clickable with locator: By.linkText: Đăng Nhập and timeout: 10 seconds
+[2026-05-10 17:09:30] [INFO ] Register01_Verify_Valid_Register - bước 13: nhập thông tin hợp lệ vào ô tài khoản
+[2026-05-10 17:09:30] [INFO ] LoginPage - Inputting text: '34d41abb-d18e-4c63-96ea-2a99da33f854' into element with locator: By.id: taiKhoan and timeout: 10 seconds
+[2026-05-10 17:09:30] [INFO ] LoginPage - Waiting for element visible with locator: By.id: taiKhoan and timeout: 10 seconds
+[2026-05-10 17:09:30] [INFO ] Register01_Verify_Valid_Register - bước 14: nhập thông tin hợp lệ vào ô mật khẩu
+[2026-05-10 17:09:30] [INFO ] LoginPage - Inputting text: '123456' into element with locator: By.id: matKhau and timeout: 10 seconds
+[2026-05-10 17:09:30] [INFO ] LoginPage - Waiting for element visible with locator: By.id: matKhau and timeout: 10 seconds
+[2026-05-10 17:09:31] [INFO ] Register01_Verify_Valid_Register - bước 15: click vào button 'Đăng Nhập'
+[2026-05-10 17:09:31] [INFO ] LoginPage - Clicking on element with locator: By.xpath: //button[.='Đăng nhập'] and timeout: 10 seconds
+[2026-05-10 17:09:31] [INFO ] LoginPage - Waiting for element clickable with locator: By.xpath: //button[.='Đăng nhập'] and timeout: 10 seconds
+[2026-05-10 17:09:31] [INFO ] Register01_Verify_Valid_Register - bước 16: kiểm tra message 'Đăng Nhập thành công' hiển thị
+[2026-05-10 17:09:31] [INFO ] CommonDialog - Getting text from element with locator: By.id: swal2-title and timeout: 10 seconds
+[2026-05-10 17:09:31] [INFO ] CommonDialog - Waiting for element visible with locator: By.id: swal2-title and timeout: 10 seconds
+[2026-05-10 17:09:32] [INFO ] TestListener - onTestFailure: test_valid_register - FAILED
+[2026-05-10 17:09:32] [ERROR] TestListener - Exception: java.lang.AssertionError: Login text message failed ! expected [Đăng nhập thành công!] but found [Đăng nhập thành công]
+[2026-05-10 17:09:32] [INFO ] TestListener - Saved screenshot: /Users/at/Documents/class15-selenium-framework/test_output/screenshots/test_valid_register_20260510_05_09_32.png
+[2026-05-10 17:09:32] [INFO ] Register01_Verify_Valid_Register - Starting after method - check test result and capture screenshot if failedtest_valid_register
+[2026-05-10 17:09:33] [INFO ] Register01_Verify_Valid_Register - Starting after class - quit webdriver
+[2026-05-10 17:09:33] [INFO ] TestListener - onFinish
+[2026-05-10 17:09:33] [INFO ] Register01_Verify_Valid_Register - Starting after suit - flush extent report
+[2026-05-10 17:09:33] [INFO ] Register01_Verify_Valid_Register - ---------Suite finished---------

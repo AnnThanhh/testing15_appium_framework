@@ -1,13 +1,14 @@
 package Base;
 
 import Report.ExtentReportManager;
-import drivers.DriverFactory;
-import drivers.DriverManager;
+import drivers.*;
+import io.appium.java_client.AppiumDriver;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import utils.ConfigManager;
 
 import java.lang.reflect.Method;
 
@@ -21,15 +22,21 @@ public class BaseTest {
         LOG.info("Starting before suit - initialize extent report");
         //khởi tạo extent report trước khi chạy bất kỳ testcase nào
         ExtentReportManager.initializeExtentReports();
+
+        ConfigManager.loadProperties();
     }
 
     @BeforeClass
     public void BeforeClass() {
-        LOG.info("Starting before class - initialize webdriver");
-        DriverManager driverManager = new ChromeDriverManager();
-        driverManager.createWebDriver();
+        LOG.info("Starting before class - initialize driver");
 
-        WebDriver driver = driverManager.getDriver();
+//        DriverManager driverManager = new AndroidDriverManager();
+//        DriverManager driverManager = new IOSDriverManager();
+        String platform = ConfigManager.getProperty("platform");
+        DriverManager driverManager = DriverManagerFactory.getDriverManager(platform);
+        driverManager.createDriver();
+
+        AppiumDriver driver = driverManager.getDriver();
         DriverFactory.setDriverThreadLocal(driver);
     }
 

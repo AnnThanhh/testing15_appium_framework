@@ -2,6 +2,7 @@ package drivers;
 
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.options.XCUITestOptions;
+import utils.ConfigManager;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -9,15 +10,25 @@ import java.net.URL;
 public class IOSDriverManager extends DriverManager {
     @Override
     public void createDriver() {
+        ConfigManager.loadProperties();
+
+        String platformName = ConfigManager.getProperty("platform");
+        String XCUITest = "XCUITest";
+        String udid = ConfigManager.getProperty("ios.udid");
+        String deviceName = ConfigManager.getProperty("ios.deviceName");
+        String app = ConfigManager.getProperty("ios.bundleid");
+        String host = ConfigManager.getProperty("appium.host");
+        String port = ConfigManager.getProperty("appium.port");
+
         XCUITestOptions iosOption = new XCUITestOptions();
-        iosOption.setPlatformName("ios");
-        iosOption.setAutomationName("XCUITest");
-        iosOption.setDeviceName("iPhone 17 Pro Max");
-        iosOption.setUdid("07C579B9-11C0-47C9-85CE-D8E556917C41");
-        iosOption.setApp("com.saucelabs.mydemo.app.ios");
+        iosOption.setPlatformName(platformName);
+        iosOption.setAutomationName(XCUITest);
+        iosOption.setDeviceName(deviceName);
+        iosOption.setUdid(udid);
+        iosOption.setApp(app);
 
         try{
-            IOSDriver driver = new IOSDriver(new URL("http://localhost:4723/"), iosOption);
+           this.driver = new IOSDriver(new URL("http://" + host + ":" + port + "/"), iosOption);
         }catch(MalformedURLException e){
             throw new RuntimeException();
         }

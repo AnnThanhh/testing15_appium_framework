@@ -2,6 +2,8 @@ package pages.abstracts;
 
 import Base.BasePage;
 import org.openqa.selenium.WebDriver;
+
+import pages.PageFactory;
 import pages.abstracts.components.TopBarNavigation;
 
 public class CommonPage extends BasePage {
@@ -10,6 +12,7 @@ public class CommonPage extends BasePage {
 
     public CommonPage(WebDriver driver) {
         super(driver);
+        this.topBarNavigation = PageFactory.getTopBarNavigation();
     }
 
     public TopBarNavigation getTopBarNavigation() {
